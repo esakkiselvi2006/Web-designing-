@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose Supermarket - Your One Stop Supermarket</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Rose Supermarket</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search">
+          <button class="btn btn-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="supermarketCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#supermarketCarousel" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#supermarketCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#supermarketCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="spmview.jpg" class="d-block w-100" style="height:500px" alt="Supermarket View">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Rose Supermarket</h5>
+          <p>Everything you need under one roof — shop smart, live better!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="veg.jpg" class="d-block w-100" style="height:500px" alt="Fresh Vegetables">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fresh Vegetables</h5>
+          <p>Farm-fresh and organic vegetables delivered daily.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="gro.jpg" class="d-block w-100" style="height:500px" alt="Groceries">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Best Deals on Groceries</h5>
+          <p>Save more with our special discounts and offers!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#supermarketCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#supermarketCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- About Section -->
+  <div class="container my-5">
+    <h2 class="text-center text-success mb-3">About Rose Supermarket</h2>
+    <p class="text-center">Rose Supermarket is your trusted neighborhood supermarket offering high-quality groceries, fresh produce, dairy, snacks, beverages, and household products — all at the best prices. We believe in freshness, quality, and customer satisfaction.</p>
+  </div>
+
+  <!-- Product Categories -->
+  <div class="container my-4">
+    <h2 class="text-center mb-4 text-success">Our Categories</h2>
+    <div class="row m-3">
+      <div class="col bg-warning text-center p-4 m-2 rounded shadow">
+        <img src="fruitin.jpg" class="img-fluid rounded-circle" alt="Fruits">
+        <p class="h4 text-dark mt-3">Fruits</p>
+        <p class="text-dark">Fresh, juicy, and seasonal fruits directly sourced from farms. Includes apples, bananas, mangoes, and more.</p>
+      </div>
+      <div class="col bg-info text-center p-4 m-2 rounded shadow">
+        <img src="vegin.jpg" class="img-fluid rounded-circle" alt="Vegetables">
+        <p class="h4 text-light mt-3">Vegetables</p>
+        <p class="text-light">Daily supply of green, leafy, and organic vegetables to keep you healthy and fresh.</p>
+      </div>
+      <div class="col bg-success text-center p-4 m-2 rounded shadow">
+        <img src="dairy.jpg" class="img-fluid rounded-circle" alt="Dairy">
+        <p class="h4 text-light mt-3">Dairy Products</p>
+        <p class="text-light">Pure milk, cheese, butter, and yogurt from trusted dairy farms. Freshness guaranteed!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- More Products -->
+  <div class="container">
+    <div class="row m-3">
+      <div class="col bg-danger text-center p-4 m-2 rounded shadow">
+        <img src="snacks.jpg" class="img-fluid rounded-circle" alt="Snacks">
+        <p class="h4 text-light mt-3">Snacks</p>
+        <p class="text-light">Tasty chips, biscuits, chocolates, and other treats to satisfy your cravings anytime.</p>
+      </div>
+      <div class="col bg-secondary text-center p-4 m-2 rounded shadow">
+        <img src="beverage.jpg" class="img-fluid rounded-circle" alt="Beverages">
+        <p class="h4 text-light mt-3">Beverages</p>
+        <p class="text-light">Refreshing juices, energy drinks, coffee, and tea to keep you energized all day long.</p>
+      </div>
+      <div class="col bg-primary text-center p-4 m-2 rounded shadow">
+        <img src="household.jpg" class="img-fluid rounded-circle" alt="Household">
+        <p class="h4 text-light mt-3">Household Items</p>
+        <p class="text-light">Cleaning supplies, toiletries, and kitchen essentials — everything your home needs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Special Offer Banner -->
+  <div class="container-fluid bg-warning text-center py-4 mt-4">
+    <h3 class="fw-bold">🔥 Big Weekend Sale at Rose Supermarket! Up to 50% Off on Selected Items 🔥</h3>
+    <p class="text-dark">Visit your nearest Rose Supermarket or shop online to grab your favorite products at unbeatable prices.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="container my-5">
+    <h2 class="text-center text-success mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form class="bg-light p-4 rounded shadow">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bold">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-bold">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid bg-dark text-light text-center mt-4">
+    <div class="row">
+      <div class="col p-3">
+        <p class="h4">Rose Supermarket</p>
+        <p class="text-muted mb-1">Your trusted destination for all your grocery needs.</p>
+        <p class="text-muted">© 2025 Rose Supermarket. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
